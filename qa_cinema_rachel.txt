@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    background-color: crison;
+   background-image: url("http://howtoebooks.info/wp-content/uploads/2018/01/background-themes-free-download-background-wallpaper-25-8k-desktop-wallpaper-download.jpg/");
+       background-size: cover;
+       }
+
+h2 {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 60px;
+	    font-family: Ariel;
+			margin-top:100px;			
+}
+
+h3 {
+	    color: white;
+		text-align: center;
+			margin-bottom: 20px;
+			    font-family: verdana;
+			        font-size: 25px;
+
+
+
+}
+
+
+h4 {
+    color: white;
+    text-align: center;
+        font-family: verdana;
+}
+h5 {
+	    color: white;
+		text-align: center;
+			margin-bottom: 25px;
+			    font-family: verdana;
+			    	font-style: italic;
+}
+p {
+    font-family: sans-serif;
+    font-size: 20px;
+	font-weight: bold;
+    text-align: center;
+	margin-bottom: -10px;
+}
+
+label {
+	    font-family: sans-serif;
+		font-size: 17px;
+		    text-align: center;
+				display: block;
+					font-weight: bold;
+/* 					margin-left: 45%; */
+
+}
+
+
+button {
+    background-color: Green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    width: 40%;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: -10px;
+
+}
+button:hover {
+	background-color: LawnGreen
+	}
+
+button:active {
+  background-color: LawnGreen;
+  box-shadow: 0 5px Green;
+  transform: translateY(3px);
+}
+
+
+
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+
+    padding: 15px;
+    text-align: center;
+    font-family: sans-serif
+    background-color:"DodgerBlue;"
+}
+}
+popUptext {
+  text-align: center;
+  font-size: 90px;
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+
+}
+
+	<style>
+    div.desc {
+	</style>
+	
+	<body>
+		
+	   
+  <h2
+  
+  
+  
+  style="border:6px solid Tomato;"> QA Cinemas</h2>
+	
+	<h3 >Welcome to QA Cinemas <h3>
+    <h3>Brought to you by Rachel Hatcher <h3>
+	<h3> Ticket Prices:</h3>
+
+
+	
+	<p style="background-color:DodgerBlue;">Standard: £8<br />
+	<p style="background-color:DodgerBlue;">Students: £6<br />	
+	<p style="background-color:DodgerBlue;">OAP: £6<br />
+	<p style="background-color:DodgerBlue;">Children: £4</p>
+	<h4 style="background-color:DodgerBlue;">Wednesday: £2 discount on all tickets!</h4>
+
+
+			
+		<h5>Select day of the week: </h5>
+		<label style="background-color:DarkTurquoise;">><input type="radio" name="Day"id="mon" checked="checked"> Monday </label >
+		<label style="background-color:DarkTurquoise;">><input type="radio" name="Day"id="tue">  Tuesday </label>
+		<label style="background-color:DarkTurquoise;">><input type="radio" name="Day"id="wed">  Wednesday  </label>
+		<label style="background-color:DarkTurquoise;">><input type="radio" name="Day"id="thur"> Thursday   </label>
+		<label style="background-color:DarkTurquoise;">><input type="radio" name="Day"id="fri">  Friday 	   </label>
+		<label style="background-color:DarkTurquoise;">><input type="radio" name="Day"id="sat">  Saturday   </label>
+		<label style="background-color:DarkTurquoise;">><input type="radio" name="Day"id="sun">  Sunday	   </label>
+				<br />
+
+					<button onclick="calculate()">Total Ticket Price</button>
+					<p id="demo">____________</p>
+					
+					<br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <script>
+    var wednesdayButton = document.getElementById("wed");                
+                    function calculate() {	
+	if (wednesdayButton.checked) {
+	var standardPrice=6;  
+	var studentPrice=4;
+	var oapPrice=4;
+	var childPrice=2;
+}
+
+else {
+	
+	var standardPrice=8;
+	var studentPrice=6;
+	var oapPrice=6;
+	var childPrice=4;
+	}
+    var studentAmount	= prompt("How manystudent tickets would you like?: ");
+	var standardAmount 	= prompt("How many standard tickets would you like?: ");
+	var OAPmount 		= prompt("How many OAP tickets would you like?: ");
+	var childAmount 	= prompt("How many child tickets would you like? Please check the film classification before buying a ticket?: ");
+
+	var total_amount = (studentAmount*studentPrice) + (standardAmount*standardPrice) + (OAPmount*oapPrice) + (childAmount*childPrice);
+    var myWindow = window.open("", "MesgWindow", "width=400, height=70");
+myWindow.document.write("Total amount due: £" +total_amount);
+document.getElementById("demo").innerHTML = "Total amount due: £" +total_amount;
+
+	}
+
+	
+</script>	
+<body>
+<div class="gallery">
+  <a target="_blank" href="deadpool.jpg">
+    <img src=\web\deadpool.jpg width="300" height="200">
+  </a>
+  <div style="background-color:MediumSlateBlue"  class="desc">Deadpool 2 <br />
+  Foul-mouthed mutant mercenary Wade Wilson (AKA. Deadpool), brings together a team of fellow mutant rogues to protect a young boy of supernatural abilities from the brutal, time-traveling mutant, Cable.<br />
+Director: David Leitch <br />
+Writers: Rhett Reese, Paul Wernick <br />
+Stars: Josh Brolin, Ryan Reynolds, Morena Baccarin <br /> </div>
+</div>
+
+
+<div class="gallery">
+  <a href="avengers.jpg">
+    <img src= \web\avengers.jpg alt="avengers" >
+  </a>
+  <div  style="background-color:MediumPurple;"class="desc">Avengers Infinity war PG-13 <br />
+  The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe. <br />
+Directors: Anthony Russo, Joe Russo <br />
+Writers: Christopher Markus (screenplay by), Stephen McFeely (screenplay by) | <br />
+Stars: Robert Downey Jr., Chris Hemsworth, Mark Ruffalo</div>
+</div>		
+	</body>
+	
+
+</html>
